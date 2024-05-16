@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./script.js" defer></script>
+    <title>Pokemon memory game</title>
+</head>
+<body>
+
+    <div class="grid-container">
+        <header>
+            <img id="img-logo" src="./media/pokemon-logo.png" alt="logo">
+            <h1>memory game</h1>
+            <form class="search-bar">
+                <input type="text" placeholder="Pretraži...">
+                <button type="submit" id="search-button"><i class="fa fa-search"></i></button>
+            </form> 
+        </header>
+
+        <main>
+            <h2>Zaigraj Pokemon memory game - na osnovu opisa pogodi o kom Pokemonu se radi</h2>
+            <div class="cards">
+                <div id="card1">
+                    <img class="image" src="./media/question.jpg" id="imgCard1" onclick="document.getElementById('imgCard1').src='./media/Charmander.png'">
+                    <p class="card-text">> Ovaj pokemon je narandžaste boje.<br>> Spada u vrstu vatrenih pokemona. <br>> Njegovo japansko ime je <b>Hitokage</b>.<br>> Na vrhu njegovog repa gori plamen.</p>
+                    <p class="card-text">U pitanju je:</p>
+                    <div id="answersCard1">
+                        <button type="button" class="buttons1" id="option1Card1">Bulbasaur</button>
+                        <button type="button" class="buttons1" id="option2Card1">Charmander</button>
+                        <button type="button" class="buttons1" id="option3Card1">Squirtle</button>
+                    </div>
+                </div>
+                <div id="card2">
+                    <img class="image" src="./media/question.jpg" id="imgCard2" onclick="document.getElementById('imgCard2').src='./media/Squirtle.png'">
+                    <p class="card-text">> Ovaj pokemon je plave boje.<br>> Spada u vrstu vodenih pokemona.<br>> Njegovo japansko ime je <b>Zenigame</b>.<br>>Njegov glavni način samoodbrane je prskanje protivnika mlazom vode.</p>
+                    <p class="card-text">U pitanju je:</p>
+                    <div id="answersCard2">
+                        <button type="button" class="buttons2" id="option1Card2">Bulbasaur</button>
+                        <button type="button" class="buttons2" id="option2Card2">Charmander</button>
+                        <button type="button" class="buttons2" id="option3Card2">Squirtle</button>
+                    </div>
+                </div>
+                <div id="card3">
+                    <img class="image" src="./media/question.jpg" id="imgCard3" onclick="document.getElementById('imgCard3').src='./media/Bulbasaur.png'">
+                    <p class="card-text">> Ovaj pokemon je plavo-zelene boje.<br>> Spada u vrstu travnatih pokemona. <br>> Njegovo japansko ime je <b>Fushigidane</b>.<br>> Može danima izdržati bez hrane.</p>
+                    <p class="card-text">U pitanju je:</p>
+                    <div id="answersCard3">
+                        <button type="button" class="buttons3" id="option1Card3">Bulbasaur</button>
+                        <button type="button" class="buttons3" id="option2Card3">Charmander</button>
+                        <button type="button" class="buttons3" id="option3Card3">Squirtle</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-text"> 
+                <a href="#contact">Contact</a>
+                <a href="#community">Community</a>
+                <a href="#help">Help</a>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,118 @@
+.grid-container {
+    display: grid;
+    gap: 10px;
+
+    grid-template-areas: 
+    'header header header header header header header header header header header header'
+    'main main main main main main main main main main main main'
+    'footer footer footer footer footer footer footer footer footer footer footer footer';
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+header {
+    display: flex;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+    grid-area: header;
+    justify-content: start;
+    background-color: #ecfccb;
+}
+h1 {
+    font-family: 'Poppins', sans-serif;
+    padding-right: 400px;
+}
+#img-logo {
+    height: 60px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.search-bar {
+    margin-top: 30px;
+    padding-left: 400px;
+}
+input[type=text] {
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+#search-button {
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid white;
+    cursor: pointer;
+    background-color: white;
+}
+#search-button:hover {
+    background-color: #e2e8f0;
+}
+main {
+    grid-area: main;
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+.cards {
+    display: flex;
+    margin-right: 80px;
+    margin-left: 80px;
+}
+#card1 {
+    border: 2px solid #d9f99d;;
+    border-radius: 6px;
+    margin: 20px;
+}
+.card-text {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+#card2 {
+    border: 2px solid #d9f99d;;
+    border-radius: 6px;
+    margin: 20px;
+}
+#card3 {
+    border: 2px solid #d9f99d;;
+    border-radius: 6px;
+    margin: 20px;
+}
+#answersCard1 {
+    text-align: center;
+}
+.buttons1, .buttons2, .buttons3 {
+    padding: 12px 24px 12px 24px;
+    width: 50%;
+    background-color: #ecfccb;
+    display: block;
+    margin-left: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.buttons1, .buttons2, .buttons3:hover{
+    background-color: #d9f99d;
+}
+footer {
+    height: 100px;
+    display: flex;
+    grid-area: footer;
+    background-color: #ecfccb;
+    justify-content: center;
+}
+.footer-text {
+    margin-top: 30px;
+}
+a {
+    margin-top: 30px;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+a:hover {
+    background-color: #bef264;
+}
